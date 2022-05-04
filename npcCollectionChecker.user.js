@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         NPC Collection Checker
 // @namespace    http://tampermonkey.net/
-// @version      0.2
+// @version      0.3
 // @description  Checks the current collections page and lists any missing items.
 // @author       plushies
 // @include        https://neopetsclassic.com/collection/?category_id=*
@@ -28,7 +28,6 @@ for (var i in items)
     {
         var MI = items[i].parentElement.querySelector("font").innerText;
         itemsArr.push(MI)
-        console.log(MI)
     }
 
 }
